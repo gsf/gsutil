@@ -606,7 +606,7 @@ _OPTIONS_TEXT = """
 
                    gsutil -o "GSUtil:parallel_process_count=8" \\
                      -o "GSUtil:parallel_thread_count=1" \\
-                     -m cp -r /local/source/dir gs://bucket/path
+                     -m cp -j html -r /local/source/dir gs://bucket/path
 
   -J             Applies gzip transport encoding to file uploads. This option
                  works like the -j option described above, but it applies to
